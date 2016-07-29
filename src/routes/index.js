@@ -12,19 +12,19 @@ import App from '../components/App';
 
 // Child routes
 import home from './home';
-import contact from './contact';
 import login from './login';
 import register from './register';
 import content from './content';
 import error from './error';
+import waagForm from './waagForm';
 
 export default {
 
   path: '/',
 
   children: [
+    waagForm,
     home,
-    contact,
     login,
     register,
     content,

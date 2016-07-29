@@ -10,6 +10,7 @@
 import React, { PropTypes } from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Home.css';
+import Link from '../../components/Link';
 
 const title = 'WaaG';
 
@@ -19,7 +20,7 @@ function Home({ news }, context) {
     <div className={s.root}>
       <div className={s.container}>
         <h1 className={s.title}>Welcome to WaaG (Week at a Glance)</h1>
-
+          <Link to='/waagForm'>+&nbsp;Add WaaG</Link>
       </div>
     </div>
   );
